@@ -1,0 +1,13 @@
+pragma solidity ^0.8.7;
+
+contract GuardaLoteria {
+    uint numeroSorteado;
+
+    function set(uint enviado) public {
+        numeroSorteado = enviado;
+    }
+    
+    function get() public view returns (uint) {
+        return numeroSorteado;
+    }
+}
