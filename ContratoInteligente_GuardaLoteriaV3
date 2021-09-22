@@ -1,0 +1,11 @@
+event TrocoEnviado (address pagador, uint troco);
+
+function set (uint enviado) public payable comCustoMinimo (1000) {
+    numeroSorteado = enviado;
+	
+	if () msg.value > 1000) {
+	uint troco = msg.value - 1000;
+	msg.sender.transfer (troco);
+	emit TrocoEnviado (msg.sender, troco);
+	}
+}
